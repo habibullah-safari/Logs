@@ -43,8 +43,9 @@ Steps for the client (one-time)
    - On your machine, in the repo `server` folder, set these env vars temporarily:
 
      ```bash
-     export GMAIL_OAUTH_CLIENT_ID=871675984390-f1tlurlkinpi59r2kumtrde340in30i9.apps.googleusercontent.com
-     export GMAIL_OAUTH_CLIENT_SECRET=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
+     export GMAIL_OAUTH_CLIENT_ID=
+     export GMAIL_OAUTH_CLIENT_SECRET=
+     
      # optional: export GMAIL_OAUTH_REDIRECT_URI=http://localhost:3001/oauth2callback
      node scripts/get_refresh_token.mjs
      ```
