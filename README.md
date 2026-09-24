@@ -15,6 +15,24 @@ ssh-keygen -t ed25519 -C "habibullah.safari7@gmail.com"
 ```bash
 cat ~/.ssh/id_ed25519_gitlab.pub 
 ```
+   - open config file 
+```bash
+vim ~/.ssh/config
+```
+   - add new key info
+```bash
+Host gitlab.com
+	HostName gitlab.com
+	User git
+	IdentityFile ~/.ssh/id_ed25519_gitlab
+	IdentitiesOnly yes
+```
+   - connect
+```bash
+ssh -T git@gitlab.com
+```
+
+Welcome to GitLab, @hsafari7!
 
 
 ### Mailing system OAuth
